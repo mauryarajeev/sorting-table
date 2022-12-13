@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="mainDiv">
+      <input type="text" id="myInput2" onkeyup="myFunction()" placeholder="Search for Customer-names.." title="Type in a name">
+    <span id="div1" >
+      <div class="dropdown">
+        <img src="filter-6535.png">
+        <div id="myDropdown" class="dropdown-content">
+          <div> Order-Status<br>
+           <label><input class="option1" type="checkbox" value="1" checked/>New Order</label>
+           <br>
+           <label><input class="option2" type="checkbox" value="2" checked/>Order Updated</label>
+           </div><br>
+           <div>  Payment<br>
+           <label><input class="option2" type="checkbox" value="2" checked/>Paid</label><br>
+           <label><input class="option2" type="checkbox" value="2" checked/>Unpaid</label>
+           </div><br>
+           <div> Order Type<br>
+          <label><input class="option3" type="checkbox" value="3" checked/>Dine In</label><br>
+          <label><input class="option2" type="checkbox" value="2" checked/>Delivery</label><br>
+          <label><input class="option2" type="checkbox" value="2" checked/>Take Away</label>
+        </div>
+        </div>
+      </div>
+      <button onclick="myFunction2()" class="dropbtn">Filter</button>
+      
+    </span>
+    <span id="cale"><img src="calendar-icon-png-4110.png" id="calendar"> &nbsp Today</span>
+
+    </div>
+  
+  <div class="container">  
+      <table id="sortTable">
+        <thead> 
+          <tr>
+            <th type="string">Order-Id<i class="fa-solid "></i></th> <!--fa-caret-up active-->
+            <th type="number">Table-No.<i class="fa-solid "></i></th>
+            <th type="string">Customer-Name <i class="fa-solid "></i></th>
+            <th type="string">Order-Type <i class="fa-solid "></i></th>
+            <th type="string">Order-Status<i class="fa-solid "></i></th>
+            <th type="string">Payment<i class="fa-solid "></i></th>
+            <th type="string">Date&Time<i class="fa-solid "></i></th>
+            <th type="string">View Oder<i class="fa-solid "></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="id">TBM1234567</td>
+            <td>1</td>
+            <td>Rangabashiyam Charak</td>
+            <td class="Oder-Type">Delivery</td>
+            <td class="Order_status">New Order</td>
+            <td class="Payment">Unpaid</td>
+            <td>19 Dec 2022<br>06:38 PM</td>
+            <td><img src="icons8-eye-30.png"></td>
+          </tr>
+          <tr>
+            <td class="id">TBM1234567</td>
+            <td>7</td>
+            <td>Olga</td>
+            <td class="Oder-Type">Dine In</td>
+            <td class="Order_status">Order Updated</td>
+            <td class="Payment">Paid</td>
+            <td>19 Dec 2022<br>07:00 PM</td>
+            <td><img src="icons8-eye-30.png"></td>
+          </tr>
+          <tr>
+            <td class="id">TBM1234567</td>
+            <td>3</td>
+            <td>Monique</td>
+            <td class="Oder-Type">Delivery</td>
+            <td class="Order_status">Order Updated</td>
+            <td class="Payment">Unpaid</td>
+            <td>19 Dec 2022<br>08:38 PM</td>
+            <td><img src="icons8-eye-30.png"></td>
+          </tr>
+          <tr>
+            <td class="id">TBM1234567</td>
+            <td>2</td>
+            <td>Judy Harris</td>
+            <td class="Oder-Type">Dine In</td>
+            <td class="Order_status">New Order</td>
+            <td class="Payment">Paid</td>
+            <td>19 Dec 2022<br>09:00 PM</td>
+            <td><img src="icons8-eye-30.png"></td>
+          </tr>
+          <tr>
+            <td class="id">TBM1234567</td>
+            <td>4</td>
+            <td>Jessie</td>
+            <td class="Oder-Type">Dine In</td>
+            <td class="Order_status">New Order</td>
+            <td class="Payment">Paid</td>
+            <td>19 Dec 2022<br>05:38 PM</td>
+            <td><img src="icons8-eye-30.png"></td>
+          </tr>
+          <tr>
+            <td class="id">TBM1234567</td>
+            <td>8</td>
+            <td>Rex Gorczany</td>
+            <td class="Oder-Type">Take Away</td>
+            <td class="Order_status">Order Updated</td>
+            <td class="Payment">Paid</td>
+            <td>19 Dec 2022<br>06:00 PM</td>
+            <td><img src="icons8-eye-30.png"></td>
+          </tr>
+          <tr>
+            <td class="id">TBM1234567</td>
+            <td>9</td>
+            <td>Yvonne Hauck</td>
+            <td class="Oder-Type">Take Away</td>
+            <td class="Order_status">New Order</td>
+            <td class="Payment">Unpaid</td>
+            <td>19 Dec 2022<br>06:32 PM</td>
+            <td><img src="icons8-eye-30.png"></td>
+          </tr>
+          <tr>
+            <td class="id">TBM1234567</td>
+            <td>10</td>
+            <td>Cystal Roltson</td>
+            <td class="Oder-Type">Dine In</td>
+            <td class="Order_status">New Order</td>
+            <td class="Payment">Paid</td>
+            <td>19 Dec 2022<br>06:18 PM</td>
+            <td><img src="icons8-eye-30.png"></td>
+          </tr>
+          <tr>
+            <td class="id">TBM1234567</td>
+            <td>11</td>
+            <td>Tim Mante</td>
+            <td class="Oder-Type">Delivery</td>
+            <td class="Order_status">New Order</td>
+            <td class="Payment">Paid</td>
+            <td>19 Dec 2022<br>8:08 PM</td>
+            <td><img src="icons8-eye-30.png"></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

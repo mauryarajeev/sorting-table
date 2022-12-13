@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: sans-serif; /* Change your font family */
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #sortTable {
+    border-collapse: collapse;
+    margin: 10px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  #sortTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #sortTable th,
+  #sortTable td {
+    padding: 12px 15px;
+  }
+  
+  #sortTable tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  #sortTable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  #sortTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  th i{
+      margin-left: 1px;
+      visibility: hidden;
+  }
+  th .active{
+      visibility: visible;    
+  }
+
+
+  img{
+    cursor: pointer;
+    margin-top:2px;
+  }
+
+  .id{
+    color: blue;
+  }
+
+
+  #myInput {
+    background-image: url('icons8-search-client-24.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+   
+    padding: 40px 20px 12px 10px;
+    border: 1px solid #ddd;
+    position: relative;
+   
+    
+  }
+
+  #myInput2 {
+    background-image: url('icons8-search-client-24.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 33%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-left: 205px;
+    margin-top: 20px;
+    
+  }
+
+  #div1{
+    padding-top:11px;
+    padding-bottom:11px;
+    padding-right:150px;
+    padding-left:11px;
+    width:20px;
+    border: 1px solid black
+  }
+
+  #div2{
+    height:12px ;
+    width: 12px;
+    border: 1px solid black;
+  }
+
+  
+
+
+
+
+
+  .dropbtn {
+    background-color: #ffffff;
+    color: rgb(22, 21, 21);
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
+ 
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+  #calendar{
+    height:20px;
+    width: 20px;
+    padding-top: 2px;
+   margin-top: 2px;
+   
+   
+    
+  }
+  
+  #cale{
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    margin-left: 10px;
+    align-items: center;
+    height: 40px;
+    font-size: 15px;
+    
+    
+  }
+
+  
